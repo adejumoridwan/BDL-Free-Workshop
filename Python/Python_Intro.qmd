@@ -1,0 +1,414 @@
+---
+title: "Data Analytics With Python"
+author: "Business Data Laboratory"
+format: 
+  revealjs:
+    theme: [moon, custom-style.scss]
+    preview-links: true
+    chalkboard: 
+      boardmarker-width: 5
+from: markdown+emoji
+execute:
+  echo: true
+editor: visual
+title-slide-attributes: 
+  data-background-image: images/bdl_full_logo.jpeg
+  data-background-size: 10%
+  data-background-position: 2% 2%
+---
+
+
+## Agenda
+
+::: incremental
+-   Intro :wave:
+
+-   Today's Take-away :clipboard:
+
+-   Q/A
+
+-   Thank you
+:::
+
+## Today's Take-away
+
+<br/>
+
+::: incremental
+1.  Why a Career as a Data Analyst?
+2.  Why Python?
+3.  Why learn from Us?
+4.  Our Instructors
+5.  Time for today's Workshop
+:::
+
+# Why a Career as a Data Analyst?
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+## What does a Data Analyst do?
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+<br> <br>
+
+::: {style="text-align: center"}
+-   Source and gather data,
+-   Clean and organize it
+-   Use data to reach meaningful conclusions
+-   Communicate results through visuals and reports
+:::
+
+------------------------------------------------------------------------
+
+## Why a career now, as a data analyst?
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+<br> <br>
+
+-   Salaries range from 168,000 NGN to 481,000 NGN or more for experienced Data Analysts
+-   Remote/Hybrid work option
+-   Freelancing
+-   Start your own consulting
+
+<br>
+
+# Why learn from Business Data Laboratory?
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Our Classes - In-person
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+![](images/trainings/pics1.jpeg){.absolute top="70" right="530" height="574" width="499"}
+:::
+
+::: {.column width="50%"}
+::: fragment
+::: {style="font-size: 0.45em"}
+![](images/trainings/pics2.jpeg){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Our Classes - Virtual
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+<br><br>
+
+-   Zoom meetings
+-   Shared document management
+-   Recorded classes
+-   Email/Chat messenger
+-   Weekly/Weekend Online classes
+
+## Our Curriculum
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+<br> <br>
+
+-   Skill-tailored curriculum
+-   Dedicated and supportive Instructors
+-   Flexible schedule
+-   Virtual classes
+-   Portfolio-ready projects
+
+<br>
+
+## Our Instructors
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: {.column width="30%"}
+::: fragment
+![](images/profile-pix.png){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+
+::: columns
+::: {.column width="70%"}
+Bilikisu Wunmi Olatunji
+:::
+
+::: fragment
+<br/> MSc (Information Technology)
+:::
+
+::: fragment
+<br/> Data Scientist/RShiny Developer
+:::
+
+::: fragment
+<br/> Certified RStudio Instructor, [**Tidyverse+RShiny**]{style="color:#c5488c"}
+:::
+
+::: fragment
+<br/> Certified [**Scrum Master/Product Owner/Agile Coach**]{style="color:#c5488c"}
+:::
+:::
+
+## Our Instructors
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: {.column width="30%"}
+::: fragment
+![](images/robinson.jpg){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+
+::: columns
+::: {.column width="70%"}
+Amanyiraho Robinson, Uganda
+:::
+
+::: fragment
+<br/> BSc (Statistics)
+:::
+
+::: fragment
+<br/> Data Scientist/RShiny Developer
+:::
+
+::: fragment
+<br/> Certified RStudio Instructor, [**Tidyverse**]{style="color:#c5488c"}
+:::
+:::
+
+## Our Instructors
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: {.column width="30%"}
+::: fragment
+![](images/ridwan.jpeg){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+
+::: columns
+::: {.column width="70%"}
+Adejumo Ridwan Suleiman
+:::
+
+::: fragment
+<br/> BSc (Statistics)
+:::
+
+::: fragment
+<br/> Data Scientist/RShiny Developer
+:::
+
+::: fragment
+<br/> Udemy Instructor
+:::
+:::
+
+## Our Instructors
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: {.column width="30%"}
+::: fragment
+![](images/faheedah.jpg){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+
+::: columns
+::: {.column width="70%"}
+Faheedah Bukola Bello
+:::
+
+::: fragment
+<br/> BSc(Statistics)
+:::
+
+::: fragment
+<br/> Data Scientist/RShiny Developer
+:::
+
+::: fragment
+<br/> Certified Scrum Master
+:::
+:::
+
+# 
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1 2]{style="opacity:0.25"} 3 [4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+## What is Python
+
+::: {.fragment .fade-up}
+Python is a high level multipurpose programming language used in:  
+:::
+::: {.fragment .fade-up}
+- Web Development   
+:::
+::: {.fragment .fade-up}
+- Aritificial Intelligence
+:::
+::: {.fragment .fade-up}
+- Data Analysis  
+:::
+::: {.fragment .fade-up}
+- Robotics and Automation  
+:::
+::: {.fragment .fade-up}
+- Scientific Computing  
+:::
+![](images/python.png){.absolute bottom=0 right=50}
+
+
+## Why Python
+
+::: {.fragment .fade-left}
+- It is open-source
+:::
+::: {.fragment .fade-right}
+- It is beginner friendly due to its simplicity, readability and flexibility.
+:::
+::: {.fragment .fade-left}
+- It is multi-purpose
+:::
+::: {.fragment .fade-right}
+- Has a large and active community of users.
+:::
+
+## What is Anaconda
+
+::: {.fragment .fade-left}
+- It’s a free and open-source distribution of the Python and R programming languages.
+:::
+
+::: {.fragment .fade-right}
+- It’s a platform for Data Scientists and Machine Learning Professionals.
+:::
+
+::: {.fragment .fade-left}
+- Has a collection of over 1500 pre-built packages and tools.
+:::
+![](images/anaconda.png){.absolute bottom=0 right=50}
+
+
+------------------------------------------------------------------------------------
+
+## Installing Anaconda
+
+::: {.fragment .fade-right}
+- Anaconda can be installed from the [Anaconda official website ](https://www.anaconda.com/products/distribution)
+:::
+
+::: {.fragment .fade-left}
+- After installing Anaconda, click on Jupyter Notebooks
+:::
+
+
+## What is Jupyter Notebooks
+::: {.fragment .fade-right}
+- Jupyter Notebooks is an open-source web appliation
+:::
+::: {.fragment .fade-left}
+- It's used for data analysis, scientific computingg and machine learning.
+:::
+::: {.fragment .fade-right}
+- Supports the Python Programming language
+:::
+![](images/jupyter.png){.absolute bottom=0 right=50 width=300 height=300}
+
+
+## Jupyter Notebook Interface
+
+## Useful Keyboard Commands In Jupyter Notebook
+
+## Alternatives To Anaconda
+::: {.fragment .fade-left}
+- [Google Colab](https://colab.research.google.com/)
+:::
+::: {.fragment .fade-right}
+- [Visual Studio Code](https://code.visualstudio.com/)
+:::
+::: {.fragment .fade-left}
+- [Kaggle Notebooks](https://www.kaggle.com/code)
+:::
+
+
+## Python Libraries For Data Analysis
+::: {.fragment .fade-up}
+- Numpy
+:::
+::: {.fragment .fade-up}
+- Pandas
+:::
+::: {.fragment .fade-up}
+- Matplotlib
+:::
+::: {.fragment .fade-up}
+- Seaborn
+:::
+::: {.fragment .fade-up}
+- Plotly
+:::
+![](images/python_libraries.png){.absolute bottom=0 right=50 height=500 width=700}
+
+
+
