@@ -1,0 +1,318 @@
+---
+title: "Data Analytics With Python"
+author: "Business Data Laboratory"
+format: 
+  revealjs:
+    theme: [moon, custom-style.scss]
+    preview-links: auto
+    chalkboard: 
+      boardmarker-width: 5
+from: markdown+emoji
+execute:
+  echo: true
+editor: visual
+title-slide-attributes: 
+  data-background-image: images/bdl_full_logo.jpeg
+  data-background-size: 10%
+  data-background-position: 2% 2%
+---
+
+## Agenda
+
+::: incremental
+-   Intro :wave:
+
+-   Today's Take-away :clipboard:
+
+-   Q/A
+
+-   Thank you
+:::
+
+## Today's Take-away
+
+<br/>
+
+::: incremental
+1.  Why a Career as a Data Analyst?
+2.  Why Python?
+3.  Why learn from Us?
+4.  Our Instructors
+5.  Time for today's Workshop
+:::
+
+# Why a Career as a Data Analyst?
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+## What does a Data Analyst do?
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+<br> <br>
+
+::: {style="text-align: center"}
+-   Source and gather data,
+-   Clean and organize it
+-   Use data to reach meaningful conclusions
+-   Communicate results through visuals and reports
+:::
+
+------------------------------------------------------------------------
+
+## Why a career now, as a data analyst?
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+<br> <br>
+
+-   Salaries range from 168,000 NGN to 481,000 NGN or more for experienced Data Analysts
+-   Remote/Hybrid work option
+-   Freelancing
+-   Start your own consulting
+
+<br>
+
+# Why learn from Business Data Laboratory?
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Our Classes - In-person
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+![](images/trainings/pics1.jpeg){.absolute top="70" right="530" height="574" width="499"}
+:::
+
+::: {.column width="50%"}
+::: fragment
+::: {style="font-size: 0.45em"}
+![](images/trainings/pics2.jpeg){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Our Classes - Virtual
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+<br><br>
+
+-   Zoom meetings
+-   Shared document management
+-   Recorded classes
+-   Email/Chat messenger
+-   Weekly/Weekend Online classes
+
+## Our Curriculum
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+<br> <br>
+
+-   Skill-tailored curriculum
+-   Dedicated and supportive Instructors
+-   Flexible schedule
+-   Virtual classes
+-   Portfolio-ready projects
+
+<br>
+
+## Our Instructors
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: {.column width="30%"}
+::: fragment
+![](images/profile-pix.png){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+
+::: columns
+::: {.column width="70%"}
+Bilikisu Wunmi Olatunji
+:::
+
+::: fragment
+<br/> MSc (Information Technology)
+:::
+
+::: fragment
+<br/> Data Scientist/RShiny Developer
+:::
+
+::: fragment
+<br/> Certified RStudio Instructor, [**Tidyverse+RShiny**]{style="color:#c5488c"}
+:::
+
+::: fragment
+<br/> Certified [**Scrum Master/Product Owner/Agile Coach**]{style="color:#c5488c"}
+:::
+:::
+
+## Our Instructors
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: {.column width="30%"}
+::: fragment
+![](images/robinson.jpg){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+
+::: columns
+::: {.column width="70%"}
+Amanyiraho Robinson, Uganda
+:::
+
+::: fragment
+<br/> BSc (Statistics)
+:::
+
+::: fragment
+<br/> Data Scientist/RShiny Developer
+:::
+
+::: fragment
+<br/> Certified RStudio Instructor, [**Tidyverse**]{style="color:#c5488c"}
+:::
+:::
+
+## Our Instructors
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: {.column width="30%"}
+::: fragment
+![](images/ridwan.jpeg){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+
+::: columns
+::: {.column width="70%"}
+Adejumo Ridwan Suleiman
+:::
+
+::: fragment
+<br/> BSc (Statistics)
+:::
+
+::: fragment
+<br/> Data Scientist/RShiny Developer
+:::
+
+::: fragment
+<br/> Udemy Instructor
+:::
+:::
+
+## Our Instructors
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: {.column width="30%"}
+::: fragment
+![](images/faheedah.jpg){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+
+::: columns
+::: {.column width="70%"}
+Faheedah Bukola Bello
+:::
+
+::: fragment
+<br/> BSc(Statistics)
+:::
+
+::: fragment
+<br/> Data Scientist/RShiny Developer
+:::
+
+::: fragment
+<br/> Certified Scrum Master
+:::
+:::
+
+# Time for today's Workshop
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1 2]{style="opacity:0.25"} 3 [4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+# Q/A
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+# Thank you
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1 2 3 4]{style="opacity:0.25"} 5 [6]{style="opacity:0.25"}
+:::
+:::
+
+------------------------------------------------------------------------
