@@ -342,67 +342,9 @@ Name: client_type, dtype: object</code></pre>
 Name: warehouse, dtype: object</code></pre>
 </div>
 </div>
-<p><strong>Create categorical ranges for numerical data</strong></p>
-<div class="cell" data-execution_count="14">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>price_range <span class="op">=</span> pd.cut(sales[<span class="st">"total"</span>],<span class="dv">20</span>)</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>price_range[:<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="14">
-<pre><code>0      (7.814, 137.149]
-1    (137.149, 263.948]
-2    (137.149, 263.948]
-3    (517.546, 644.345]
-4      (7.814, 137.149]
-Name: total, dtype: category
-Categories (20, interval[float64, right]): [(7.814, 137.149] &lt; (137.149, 263.948] &lt; (263.948, 390.747] &lt; (390.747, 517.546] ... (2039.134, 2165.933] &lt; (2165.933, 2292.732] &lt; (2292.732, 2419.531] &lt; (2419.531, 2546.33]]</code></pre>
-</div>
-</div>
-<div class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>sales[<span class="st">"total"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="12">
-<pre><code>0      134.83
-1      173.61
-2      263.45
-3      605.44
-4      120.96
-        ...  
-995    295.83
-996    320.96
-997    393.64
-998    241.23
-999    548.13
-Name: total, Length: 1000, dtype: float64</code></pre>
-</div>
-</div>
-<p><strong>Value counts in the ranges created above</strong></p>
-<div class="cell" data-execution_count="15">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>pd.value_counts(price_range)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="15">
-<pre><code>(7.814, 137.149]        390
-(137.149, 263.948]      291
-(263.948, 390.747]      117
-(390.747, 517.546]       61
-(517.546, 644.345]       37
-(771.144, 897.943]       20
-(644.345, 771.144]       17
-(1024.742, 1151.541]     15
-(897.943, 1024.742]      13
-(1151.541, 1278.34]      10
-(1405.139, 1531.938]      8
-(1658.737, 1785.536]      5
-(1531.938, 1658.737]      5
-(1278.34, 1405.139]       4
-(2165.933, 2292.732]      3
-(1785.536, 1912.335]      2
-(2292.732, 2419.531]      1
-(2419.531, 2546.33]       1
-(1912.335, 2039.134]      0
-(2039.134, 2165.933]      0
-Name: total, dtype: int64</code></pre>
-</div>
-</div>
 <p><strong>Index the columns of the first row</strong></p>
 <div class="cell" data-execution_count="51">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>sales.iloc[<span class="dv">0</span>,:]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>sales.iloc[<span class="dv">0</span>,:]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="51">
 <pre><code>date               01/06/2021
 warehouse             Central
@@ -416,7 +358,7 @@ Name: 0, dtype: object</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="19">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>sales.loc[<span class="dv">4</span>,:]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>sales.loc[<span class="dv">4</span>,:]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <pre><code>date               1/6/2021
 warehouse           Central
@@ -431,7 +373,7 @@ Name: 4, dtype: object</code></pre>
 </div>
 <p><strong>Order the data by a specifiec column</strong></p>
 <div class="cell" data-execution_count="20">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>sales[<span class="st">"total"</span>].sort_values()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>sales[<span class="st">"total"</span>].sort_values()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>274      10.35
 576      10.42
@@ -449,8 +391,8 @@ Name: total, Length: 1000, dtype: float64</code></pre>
 </div>
 <p><strong>Sort data by a column and obtain a cross-section of the data</strong></p>
 <div class="cell" data-execution_count="24">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>sorted_data <span class="op">=</span> sales.sort_values([<span class="st">"quantity"</span>], ascending<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>sorted_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>sorted_data <span class="op">=</span> sales.sort_values([<span class="st">"quantity"</span>], ascending<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>sorted_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 
 <div>
@@ -598,8 +540,8 @@ Name: total, Length: 1000, dtype: float64</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="59">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>sorted_data <span class="op">=</span> sales.sort_values([<span class="st">"total"</span>], ascending<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>sorted_data.iloc[:,:].head(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>sorted_data <span class="op">=</span> sales.sort_values([<span class="st">"total"</span>], ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>sorted_data.iloc[:,:].head(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="59">
 
 <div>
@@ -681,7 +623,7 @@ Name: total, Length: 1000, dtype: float64</code></pre>
 </div>
 <p><strong>Obtain Value Counts of all columns</strong></p>
 <div class="cell" data-execution_count="26">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>sales[<span class="st">"product_line"</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>sales[<span class="st">"product_line"</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
 <pre><code>Breaking system          230
 Suspension &amp; traction    228
@@ -693,7 +635,7 @@ Name: product_line, dtype: int64</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="63">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>sales[<span class="st">"warehouse"</span>].value_counts(), sales[<span class="st">"product_line"</span>].value_counts(), sales[<span class="st">"client_type"</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>sales[<span class="st">"warehouse"</span>].value_counts(), sales[<span class="st">"product_line"</span>].value_counts(), sales[<span class="st">"client_type"</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="63">
 <pre><code>(Central    480
  North      340
@@ -713,7 +655,7 @@ Name: product_line, dtype: int64</code></pre>
 </div>
 <p><strong>Order the data by a specified column</strong></p>
 <div class="cell" data-execution_count="66">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>sales.dtypes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>sales.dtypes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="66">
 <pre><code>date             object
 warehouse        object
@@ -728,7 +670,7 @@ dtype: object</code></pre>
 </div>
 <p><strong>Get the unique value of a column by names</strong></p>
 <div class="cell" data-execution_count="27">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>sales[<span class="st">"product_line"</span>].unique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>sales[<span class="st">"product_line"</span>].unique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
 <pre><code>array(['Miscellaneous', 'Breaking system', 'Suspension &amp; traction',
        'Frame &amp; body', 'Engine', 'Electrical system'], dtype=object)</code></pre>
@@ -736,14 +678,14 @@ dtype: object</code></pre>
 </div>
 <p><strong>Get the unique count of the unique values of a column</strong></p>
 <div class="cell" data-execution_count="68">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(sales[<span class="st">"product_line"</span>].unique())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(sales[<span class="st">"product_line"</span>].unique())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="68">
 <pre><code>6</code></pre>
 </div>
 </div>
 <p><strong>Index into a column and get the first four rows</strong></p>
 <div class="cell" data-execution_count="28">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>sales.loc[<span class="dv">0</span>:<span class="dv">10</span>,[<span class="st">"total"</span>,<span class="st">"payment"</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>sales.loc[<span class="dv">0</span>:<span class="dv">10</span>,[<span class="st">"total"</span>,<span class="st">"payment"</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
 
 <div>
@@ -822,7 +764,7 @@ dtype: object</code></pre>
 <h2 class="anchored" data-anchor-id="data-aggregration">Data Aggregration</h2>
 <p><strong>Describe data</strong></p>
 <div class="cell" data-execution_count="29">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>sales.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>sales.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="29">
 
 <div>
@@ -891,7 +833,7 @@ dtype: object</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="78">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>pd.crosstab(sales[<span class="st">"warehouse"</span>],sales[<span class="st">"client_type"</span>]),pd.crosstab(sales[<span class="st">"product_line"</span>],sales[<span class="st">"client_type"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>pd.crosstab(sales[<span class="st">"warehouse"</span>],sales[<span class="st">"client_type"</span>]),pd.crosstab(sales[<span class="st">"product_line"</span>],sales[<span class="st">"client_type"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="78">
 <pre><code>(client_type  Retail  Wholesale
  warehouse                     
@@ -909,7 +851,7 @@ dtype: object</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="30">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>pd.crosstab(sales[<span class="st">"warehouse"</span>],sales[<span class="st">"client_type"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>pd.crosstab(sales[<span class="st">"warehouse"</span>],sales[<span class="st">"client_type"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="30">
 
 <div>
@@ -949,9 +891,9 @@ dtype: object</code></pre>
 </div>
 </div>
 <p><strong>Return the subset of a data</strong></p>
-<div class="cell" data-execution_count="35">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>sales[(sales[<span class="st">"total"</span>] <span class="op">&gt;</span> <span class="dv">1000</span>) <span class="op">&amp;</span> (sales[<span class="st">"warehouse"</span>] <span class="op">==</span> <span class="st">"Central"</span>)].head().</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="35">
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>sales[(sales[<span class="st">"total"</span>] <span class="op">&gt;</span> <span class="dv">1000</span>) <span class="op">&amp;</span> (sales[<span class="st">"warehouse"</span>] <span class="op">==</span> <span class="st">"Central"</span>)].head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
 
 <div>
 
@@ -1031,8 +973,8 @@ dtype: object</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="89">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>subset <span class="op">=</span> sales[(sales[<span class="st">"total"</span>] <span class="op">&gt;</span> <span class="dv">1000</span>) <span class="op">&amp;</span> (sales[<span class="st">"warehouse"</span>] <span class="op">==</span> <span class="st">"Central"</span>)].head()</span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>subset</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>subset <span class="op">=</span> sales[(sales[<span class="st">"total"</span>] <span class="op">&gt;</span> <span class="dv">1000</span>) <span class="op">&amp;</span> (sales[<span class="st">"warehouse"</span>] <span class="op">==</span> <span class="st">"Central"</span>)].head()</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>subset</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="89">
 
 <div>
@@ -1113,14 +1055,53 @@ dtype: object</code></pre>
 </div>
 </div>
 <p><strong>Obtaining the average sales made in each warehouse and payment</strong></p>
-<div class="cell" data-execution_count="38">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>sales.groupby([<span class="st">"client_type"</span>,<span class="st">"payment"</span>]).mean()[<span class="st">"total"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="38">
-<pre><code>client_type  payment    
-Retail       Cash           165.509483
-             Credit card    167.331669
-Wholesale    Transfer       709.521467
-Name: total, dtype: float64</code></pre>
+<div class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>sales.groupby([<span class="st">"client_type"</span>,<span class="st">"payment"</span>]).mean(<span class="st">"total"</span>).sort_values([<span class="st">"total"</span>], ascending <span class="op">=</span> <span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="21">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>quantity</th>
+      <th>unit_price</th>
+      <th>total</th>
+    </tr>
+    <tr>
+      <th>client_type</th>
+      <th>payment</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Wholesale</th>
+      <th>Transfer</th>
+      <td>23.022222</td>
+      <td>30.443244</td>
+      <td>709.521467</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">Retail</th>
+      <th>Credit card</th>
+      <td>5.444613</td>
+      <td>30.337375</td>
+      <td>167.331669</td>
+    </tr>
+    <tr>
+      <th>Cash</th>
+      <td>5.405172</td>
+      <td>29.999828</td>
+      <td>165.509483</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 </div>
 </section>
@@ -1128,37 +1109,32 @@ Name: total, dtype: float64</code></pre>
 <h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
 <p><strong>Number of sales made by payment type</strong></p>
 <div class="cell" data-execution_count="39">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>sales.client_type.value_counts().plot(kind <span class="op">=</span> <span class="st">"bar"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>sales.client_type.value_counts().plot(kind <span class="op">=</span> <span class="st">"bar"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="39">
 <pre><code>&lt;AxesSubplot:&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="Case%20Study_files/figure-html/cell-31-output-2.png" class="img-fluid"></p>
+<p><img src="Case%20Study_files/figure-html/cell-28-output-2.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>sales.warehouse.value_counts().plot(kind <span class="op">=</span> <span class="st">"bar"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>sales.warehouse.value_counts().plot(kind <span class="op">=</span> <span class="st">"bar"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>&lt;AxesSubplot: &gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="Case%20Study_files/figure-html/cell-32-output-2.png" class="img-fluid"></p>
+<p><img src="Case%20Study_files/figure-html/cell-29-output-2.png" class="img-fluid"></p>
 </div>
 </div>
 <p><strong>Total sales made from each payment method</strong></p>
 <div class="cell" data-scrolled="true" data-execution_count="41">
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>sales.groupby(<span class="st">"warehouse"</span>)[<span class="st">"total"</span>].agg(np.<span class="bu">sum</span>).plot(kind <span class="op">=</span> <span class="st">"bar"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>sales.groupby(<span class="st">"warehouse"</span>)[<span class="st">"total"</span>].agg(np.<span class="bu">sum</span>).plot(kind <span class="op">=</span> <span class="st">"bar"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="41">
 <pre><code>&lt;AxesSubplot:xlabel='warehouse'&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="Case%20Study_files/figure-html/cell-34-output-2.png" class="img-fluid"></p>
+<p><img src="Case%20Study_files/figure-html/cell-31-output-2.png" class="img-fluid"></p>
 </div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>conda install numpy</span>
-<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>conda install pandas</span>
-<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>conda install matplotlib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
