@@ -1,0 +1,95 @@
+---
+title: "Data Analytics With Python"
+author: "Business Data Laboratory"
+format: 
+  revealjs:
+    theme: [moon, custom-style.scss]
+    preview-links: true
+    chalkboard: 
+      boardmarker-width: 5
+from: markdown+emoji
+execute:
+  echo: true
+editor: visual
+title-slide-attributes: 
+  data-background-image: images/bdl_full_logo.jpeg
+  data-background-size: 10%
+  data-background-position: 2% 2%
+---
+
+
+
+## What is Python
+
+::: {.fragment .fade-up}
+Python is a high level multipurpose programming language used in:  
+:::
+::: {.fragment .fade-up}
+- Web Development   
+:::
+::: {.fragment .fade-up}
+- Aritificilal Intelligence
+:::
+::: {.fragment .fade-up}
+- Data Analysis  
+:::
+::: {.fragment .fade-up}
+- Robotics and Automation  
+:::
+::: {.fragment .fade-up}
+- Scientific Computing  
+:::
+
+
+## Why Python
+
+::: {.fragment .fade-left}
+- It is open-source
+:::
+::: {.fragment .fade-right}
+- It is beginner friendly due to its simplicity, readability and flexibility.
+:::
+::: {.fragment .fade-left}
+- It is multi-purpose
+:::
+::: {.fragment .fade-right}
+- Has a large and active community of users.
+:::
+
+## What is Anaconda
+
+::: {.fragment .fade-left}
+- It’s a free and open-source distribution of the Python and R programming languages.
+:::
+
+::: {.fragment .fade-right}
+- It’s a platform for Data Scientists and Machine Learning Professionals.
+:::
+
+::: {.fragment .fade-left}
+- Has a collection of over 1500 pre-built packages and tools.
+:::
+
+
+## Installing Anaconda
+
+::: {.fragment .fade-left}
+- Anaconda can be installed from the [Anaconda official website ](https://www.anaconda.com/products/distribution)
+:::
+
+::: {.fragment .fade-left}
+- After installing Anaconda, click on Jupyter Notebooks
+:::
+
+## What is Jupyter Notebooks
+
+## Jupyter Notebook Interface
+
+## Useful Keyboard Commands In Jupyter Notebook
+
+## Alternatives To Anaconda
+
+## Python Libraries For Data Analysis
+
+
+
