@@ -375,11 +375,6 @@ Python is a high level multipurpose programming language used in:
 :::
 ![](images/jupyter.png){.absolute bottom=0 right=50 width=300 height=300}
 
-
-## Jupyter Notebook Interface
-
-## Useful Keyboard Commands In Jupyter Notebook
-
 ## Alternatives To Anaconda
 ::: {.fragment .fade-left}
 - [Google Colab](https://colab.research.google.com/)
@@ -388,7 +383,7 @@ Python is a high level multipurpose programming language used in:
 - [Visual Studio Code](https://code.visualstudio.com/)
 :::
 ::: {.fragment .fade-left}
-- [Kaggle Notebooks](https://www.kaggle.com/code)
+- [Kaggle Notebooks](https://www.kaggle.com/)
 :::
 
 
