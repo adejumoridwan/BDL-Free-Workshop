@@ -1,10 +1,11 @@
+
 ---
-title: "Data Analytics With Python"
+title: "Data Analytics With R"
 author: "Business Data Laboratory"
 format: 
   revealjs:
     theme: [moon, custom-style.scss]
-    preview-links: auto
+    preview-links: true
     chalkboard: 
       boardmarker-width: 5
 from: markdown+emoji
@@ -16,6 +17,7 @@ title-slide-attributes:
   data-background-size: 10%
   data-background-position: 2% 2%
 ---
+
 
 ## Agenda
 
@@ -35,10 +37,9 @@ title-slide-attributes:
 
 ::: incremental
 1.  Why a Career as a Data Analyst?
-2.  Why Python?
+2.  Why R?
 3.  Why learn from Us?
 4.  Our Instructors
-5.  Time for today's Workshop
 :::
 
 # Why a Career as a Data Analyst?
@@ -287,7 +288,7 @@ Faheedah Bukola Bello
 :::
 :::
 
-# Time for today's Workshop
+# 
 
 ::: {.absolute top="0" left="100%"}
 ::: sectionhead
@@ -295,24 +296,250 @@ Faheedah Bukola Bello
 :::
 :::
 
-------------------------------------------------------------------------
+## Housekeeping
 
-# Q/A
+::: incremental
+-   Intro :wave:
+
+-   Workshop materials :arrow_down:
+
+-   Break :clock9:
+
+-   Today's Take-away :clipboard:
+:::
+
+## Today's Take-away
+
+<br/>
+
+::: incremental
+1.  Introduction to R
+2.  Data Analysis using R?
+3.  Q/A
+4.  Thank You
+:::
+
+# Introduction to R
 
 ::: {.absolute top="0" left="100%"}
 ::: sectionhead
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+1 [2 3 4 5 6]{style="opacity:0.25"}
 :::
 :::
 
 ------------------------------------------------------------------------
 
-# Thank you
+## What is R?
 
 ::: {.absolute top="0" left="100%"}
 ::: sectionhead
-[1 2 3 4]{style="opacity:0.25"} 5 [6]{style="opacity:0.25"}
+1 [2 3 4 5 6]{style="opacity:0.25"}
 :::
 :::
+
+<br> <br>
+
+::: {style="text-align: center"}
+-   R is a programming language and software environment for statistical computing and graphics.
+-   It's used in the field of data science for data analysis, visualization, and statistical modeling.
+:::
+
+------------------------------------------------------------------------
+
+## Why R?
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+<br>
+
+R is [**open-source**]{style="color:#c5488c"} and has a large community of users who contribute to its development and support with online resources. <br>
+
+. . .
+
+It offers a variety of [**packages**]{style="color:#c5488c"} for data manipulation, machine learning, and visualization. <br>
+
+. . .
+
+It is widely used in [**academia and industry**]{style="color:#c5488c"}, making it a valuable skill for professionals in various fields. <br>
+
+. . .
+
+R is highly [**flexible**]{style="color:#c5488c"} and allows users to create [**custom functions and scripts**]{style="color:#c5488c"}, making it suitable for a wide range of data analysis tasks. <br>
+
+. . .
+
+------------------------------------------------------------------------
+
+## Installing R and RStudio
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+<br/> <br/> <br/>
+
+Download and install R \[**FIRST**\] [R language](https://cloud.r-project.org/) <br/> <br/>
+
+. . .
+
+Next, download and install [RStudio IDE](https://www.rstudio.com/products/rstudio/download/)
+
+------------------------------------------------------------------------
+
+## Difference between R and RStudio IDE
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+![](images/r-console.png){.absolute top="70" right="530" height="574" width="499"}
+:::
+
+::: {.column width="50%"}
+::: fragment
+::: {style="font-size: 0.45em"}
+![](images/rstudio-ide-2.png){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+:::
+:::
+
+## Getting to know RStudio IDE
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: {.absolute top="10%" left="0" width="1031" height="529"}
+::: {style="text-align: center"}
+![](images/rsudio-ide-1.png)
+:::
+:::
+
+::: {.absolute top="66%" left="55%"}
+::: {style="color: #c5488c"}
+codes are displayed, executed here but not stored
+:::
+:::
+
+. . .
+
+::: {.absolute top="28%" left="70%"}
+::: {style="color: #c5488c"}
+environment data are displayed up here
+:::
+:::
+
+. . .
+
+::: {.absolute top="50%" left="10%"}
+::: {style="color: #c5488c"}
+project files displayed here
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Getting to know RStudio IDE
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: {.absolute top="10%" left="0" width="1031" height="529"}
+::: {style="text-align: center"}
+![](images/rstudio-ide-2.png)
+:::
+:::
+
+::: {.absolute top="66%" left="55%"}
+::: {style="color: #c5488c"}
+codes are here
+:::
+:::
+
+::: {.absolute top="28%" left="70%"}
+::: {style="color: #c5488c"}
+environment data are displayed up here
+:::
+:::
+
+::: {.absolute top="35%" left="25%"}
+::: {style="color: #c5488c"}
+code can also<br>go here
+:::
+:::
+
+------------------------------------------------------------------------
+
+## File and Project Structure in RStudio IDE
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+-   Root - Project Directory
+-   Data - Data Directory
+-   R(optional) - Custom functions
+-   Rmd - Reports Directory
+-   scripts - Scripts directory
+-   Output - plots and tables directory
+:::
+
+::: {.column width="50%"}
+::: fragment
+::: {style="font-size: 0.45em"}
+![](images/file-project-structure.png){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Creating R Project
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: columns
+![](images/new-project.png){.absolute top="70" height="574" width="100%"}
+:::
+
+------------------------------------------------------------------------
+
+## Getting help
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+-   [R/RStudio help]()
+-   [RStudio Community](https://community.rstudio.com/latest)
+-   [Search engines](www.google.com)
+-   [Stackoverflow](https://stackoverflow.com/)
 
 ------------------------------------------------------------------------
