@@ -332,5 +332,8 @@ To get started with Power BI, you can install it from the Microsoft Store
 ## What We Will Be Building
 ![](images/dashboard.png){.absolute}]
 
+## Resources
+[Download here](https://powerbi.microsoft.com/en-us/diad/)
+
 
 

@@ -519,7 +519,6 @@ code can also<br>go here
 
 ------------------------------------------------------------------------
 
-
 ## R Variables
 
 ::: {.absolute top="0" left="100%"}
@@ -1467,8 +1466,3 @@ ggplot(data = sales,
 [1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
 :::
 :::
-
-
-
-
-
